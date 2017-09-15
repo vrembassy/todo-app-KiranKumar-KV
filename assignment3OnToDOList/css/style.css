@@ -1,0 +1,46 @@
+.container{
+width:35vw;
+height:30vw;	
+padding:2vw;
+border:2px solid black;
+margin: auto;
+margin-top:10vw;
+overflow:auto;
+background-color:#eee;
+}
+
+#todoTextBox{
+width:100%;}
+
+ul{
+ list-style-type:none;
+ padding:0;
+ font-size:20px;
+}
+
+/*adding styles to label*/
+.addlabel{
+	text-decoration:line-through;
+	color: #a3a375;
+}
+
+/*removing the label style*/
+.removelabel
+{
+	text-decoration:none;
+	
+	color:"black";
+}
+
+/*horizontal line*/
+.horline
+{
+	border-bottom:2px solid black;
+	margin-bottom:25px;
+
+}
+
+.deletestyle
+{
+	float:right;
+}

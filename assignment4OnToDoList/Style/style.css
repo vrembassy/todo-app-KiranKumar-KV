@@ -1,0 +1,125 @@
+
+.container
+{
+	width:45vw;
+	height:30vw;	
+	padding:2vw;
+	border:2px solid black;
+	margin: auto;
+	margin-top:10vw;
+	overflow:auto;
+	background-color:#eee;
+}
+
+.headerContainer
+{
+	border-bottom:2px solid black;
+}
+
+.itemContainer .preloadedList
+{
+	border-bottom:2px solid black;
+	margin-bottom:25px;
+	
+
+}
+
+.button 
+{
+    
+	float:right;
+	
+}
+.delete
+{
+	float:right;
+}
+
+#todoTextBox
+{
+	width:99%;
+}
+
+ul
+{
+	list-style-type:none;
+	padding:0;
+	font-size:20px;
+	margin-top:30px;
+}
+
+/*adding styles to label*/
+.addlabel
+{
+	text-decoration:line-through;
+	color: #a3a375;
+}
+
+/*removing the label style*/
+.removelabel
+{
+	text-decoration:none;
+	color:"black";
+}
+
+/*horizontal line*/
+.horline
+{
+	border-bottom:2px solid black;
+	margin-bottom:25px;
+
+}
+
+.deletestyle
+{
+	float:right;
+}
+
+input[type=checkbox]:checked + label.label_eat{
+  text-decoration: line-through;
+  color:#a3a375;
+}
+
+input[type=checkbox]:checked + label.label_sleep{
+  text-decoration: line-through;
+  color:#a3a375;;
+}
+
+/*media query*/
+@media screen and (max-width:1000px)
+{
+	.container{
+	width:60vw;
+	height:40vw;
+	}
+}
+@media screen and (max-width:750px)
+{
+	.container{
+	width:75vw;
+	height:60vw;
+	}
+}
+@media screen and (max-width:500px)
+{
+	.container{
+	width:85vw;
+	height:70vw;
+	}
+}
+
+@media screen and (max-width:300px)
+{
+	.container{
+	width:95vw;
+	height:80vw;
+	}
+}
+
+@media screen and (min-width:1000px)
+{
+	.container{
+	width:55vw;
+	height:30vw;
+	}
+}

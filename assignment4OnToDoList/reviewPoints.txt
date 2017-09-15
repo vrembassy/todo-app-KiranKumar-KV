@@ -1,0 +1,32 @@
+1) More style to html page.
+2) Add scroll for the window.
+3) Use removeEventListener() to handle the event.
+4) Using one class for adding and removing style for checkbox.
+5) Add horizontal line in class headerContainer.
+6) Using classlist.add() i can add horizontal line.
+7) Without passing parameter to the insertTodolist() i can call the function.
+8) Without parameter i can write insertTodolist().
+9) I can write separate function checkboxchecked()
+10) Add eventlistener for checkbox.
+11) I can write separate function deleteItem().
+12) Add eventListener for deleteItem.
+13) Add style for li using classlist.add().
+14) Add separate background color for each li element.
+15) Indentation for header.
+16) Html code should be in 80 columns.
+17) javascript put it in end of body.
+18) Remove onload and onunload from body tag.
+19) Remove hr tag in html.
+20) Remove unwated class and id from html.
+21) Add preloaded item.
+22) Remove unwanted comments from html.
+23) Remove class inside link tag.
+24) Register DOM content .
+25) To remove child use inneHtml=''.
+26) Separate function for event handler.
+27) Resize window.
+28) Add events for preloaded items.
+29) One button for remove all the element in html.
+30) Global styles put it in body class.
+31) Make separate components like header component, input5 component, ul component, li component.
+32) Data should be stored in array.

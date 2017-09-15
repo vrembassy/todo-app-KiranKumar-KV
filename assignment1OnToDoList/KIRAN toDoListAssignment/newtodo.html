@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head><title>TODO list</title>
+<style>
+.container{
+width:45vw;
+height:25vw;	
+padding:2vw;
+border:2px solid black;
+margin: auto;
+margin-top:10vw;
+overflow:auto;
+}
+
+.todoContainer {
+
+}
+
+</style> 
+</head>
+<body>
+<div class="container">
+<div class="todoContainer" id="todoContainer">
+<h2>TODO List</h2>
+<hr>                    
+<input type="text" id="todoTextBox" placeholder="New TODO item" style="width:100%;" />
+</div>
+</div>
+
+<script>
+var item = document.getElementById("todoTextBox");
+
+
+item.addEventListener("keydown" , function (event) {
+	if(event.keyCode === 13){
+		//alert("keypressed");
+		if (item.value.length < 1 || item.value == " ")
+        {
+          alert("enter proper input");
+        }else
+		insertToDoList(event);
+		
+		
+	}
+	
+});
+
+
+
+function insertToDoList(event)
+		{
+		
+		var item1 = event.target.value;
+		item.value=null;
+		
+		var Container=document.getElementById("todoContainer");
+		var checkbox=document.createElement('input');
+		checkbox.type="checkbox";
+		checkbox.name="todolist";
+		checkbox.value="todolist";
+		checkbox.id="todolist";
+		checkbox.onclick=function checkItem(){
+		
+		label.style.textDecoration='line-through';
+		label.style.color='#eee';
+	     };
+		var label=document.createElement('label');
+		label.htmlFor="todolist";
+		label.appendChild(document.createTextNode(item1));
+	    
+		var linebreak=document.createElement('br');
+		
+		var horline=document.createElement('hr');
+		
+		
+		var anchor=document.createElement('A');
+		anchor.href = "#";
+         anchor.innerHTML = "Delete";
+		 anchor.style.float= "right";
+		anchor.onclick = function deleteitem(){
+		Container.removeChild(checkbox);
+		Container.removeChild(label);
+		Container.removeChild(anchor);
+		Container.removeChild(linebreak);
+	    Container.removeChild(horline);
+		};
+		Container.appendChild(checkbox);
+		Container.appendChild(label);
+		Container.appendChild(anchor);
+		Container.appendChild(linebreak);
+		Container.appendChild(horline);
+		
+        }
+
+</script>
+
+</body>
+</html>
